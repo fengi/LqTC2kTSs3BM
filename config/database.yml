@@ -11,8 +11,8 @@ development:
   reconnect: false
   database: freemark_development
   pool: 5
-  username: root
-  password:
+  username: freemark
+  password: freemark
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -24,8 +24,8 @@ test:
   reconnect: false
   database: freemark_test
   pool: 5
-  username: root
-  password:
+  username: freemark
+  password: freemark
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -34,6 +34,6 @@ production:
   reconnect: false
   database: freemark_production
   pool: 5
-  username: root
-  password:
+  username: freemark
+  password: freemark
   socket: /var/run/mysqld/mysqld.sock
