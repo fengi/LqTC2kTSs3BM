@@ -7,8 +7,15 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div class="welcome">
+    <% if current_user %>
+      Welcome <%= current_user.email %>
+    <% else %>
+      <%= link_to "Sign in", new_user_session_url %>
+    <% end%>
+  </div>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
