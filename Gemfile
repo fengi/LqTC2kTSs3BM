@@ -26,11 +26,13 @@ gem 'jquery-rails'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
+gem 'haml'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
+  # for testing
   gem 'capybara'
   gem 'launchy'
   gem 'cucumber-rails'
@@ -39,4 +41,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'autotest'
   gem 'annotate-models'
+
+  # for html2haml
+  gem 'ruby_parser'
+  gem 'hpricot'
 end
