@@ -6,5 +6,5 @@ Feature: Authentification
     And I fill in "user_email" with "blah@bubb.de"
     And I fill in "user_password" with "password"
     And I press "Sign in"
-    Then show me the page
+#    Then show me the page
     Then I should see "Welcome blah@bubb.de"
